@@ -1,0 +1,7 @@
+caxy_xdomain_proxy:
+    path:     /web/IE9/proxy.html
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: CaxyXDomainBundle:Static:proxy.html.twig
+        maxAge:       86400
+        sharedAge:    86400

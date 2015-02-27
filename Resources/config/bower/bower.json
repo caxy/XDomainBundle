@@ -1,0 +1,6 @@
+{
+    "name": "caxy-xdomain-bundle",
+    "dependencies": {
+        "xdomain": "jpillora/xdomain#0.6.17"
+    }
+}

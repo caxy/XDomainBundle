@@ -1,0 +1,6 @@
+<!doctype html>
+{% block javascripts -%}
+    {% javascripts '@xdomain_js' -%}
+        <script src="{{ asset_url }}" data-master="*"></script>
+    {%- endjavascripts %}
+{%- endblock %}

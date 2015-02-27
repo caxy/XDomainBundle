@@ -1,0 +1,24 @@
+{
+    "name": "caxy/xdomain-bundle",
+    "description": "XDomain for cross domain request support in IE9",
+    "require": {
+        "sp/bower-bundle": "~0.11"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Doherty",
+            "email": "bdoherty@caxy.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Caxy\\Bundle\\XDomainBundle\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

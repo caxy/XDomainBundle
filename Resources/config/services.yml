@@ -1,0 +1,9 @@
+parameters:
+    caxy_xdomain.listener.xframe_option_header.class: Caxy\Bundle\XDomainBundle\EventListener\XFrameOptionHeaderListener
+
+services:
+    caxy_x_domain.example:
+        class: %caxy_xdomain.listener.xframe_option_header.class%
+        arguments: [ %caxy_xdomain.allow_from% ]
+        tags:
+            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }

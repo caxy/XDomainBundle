@@ -1,6 +1,11 @@
 <!doctype html>
 {% block javascripts -%}
     {% javascripts '@xdomain_js' -%}
-        <script src="{{ asset_url }}" data-master="*"></script>
+<script src="{{ asset_url }}"></script>
+<script>
+    xdomain.masters({
+        "{{ caxy_xdomain.allow_from }}": "*"
+    });
+</script>
     {%- endjavascripts %}
 {%- endblock %}

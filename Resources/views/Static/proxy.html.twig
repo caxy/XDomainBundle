@@ -2,10 +2,10 @@
 {% block javascripts -%}
     {% javascripts '@CaxyXDomainBundle/Resources/public/javascript/xdomain.min.js' -%}
 <script src="{{ asset_url }}"></script>
+    {%- endjavascripts %}
 <script>
     xdomain.masters({
         "{{ caxy_xdomain.allow_from }}": "*"
     });
 </script>
-    {%- endjavascripts %}
 {%- endblock %}

@@ -2,7 +2,7 @@ parameters:
     caxy_xdomain.listener.xframe_option_header.class: Caxy\Bundle\XDomainBundle\EventListener\XFrameOptionHeaderListener
 
 services:
-    caxy_x_domain.example:
+    caxy_xdomain.listener.xframe_option_header:
         class: %caxy_xdomain.listener.xframe_option_header.class%
         arguments: [ %caxy_xdomain.allow_from% ]
         tags:

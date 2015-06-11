@@ -1,9 +1,6 @@
 {
     "name": "caxy/xdomain-bundle",
     "description": "XDomain for cross domain request support in IE9",
-    "suggest": {
-        "sp/bower-bundle": "Supports XDomain dependency installed from source."
-    },
     "license": "MIT",
     "authors": [
         {

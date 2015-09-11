@@ -1,11 +1,9 @@
 <!doctype html>
-{% block javascripts -%}
-    {% javascripts '@xdomain_js' -%}
-<script src="{{ asset_url }}"></script>
-    {%- endjavascripts %}
+{% block javascripts %}
+<script src="{{ asset('xdomain.min.js', 'xdomain') }}"></script>
 <script>
     xdomain.masters({
         "{{ caxy_xdomain.allow_from }}": "*"
     });
 </script>
-{%- endblock %}
+{% endblock %}

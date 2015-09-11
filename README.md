@@ -47,10 +47,12 @@ documentation](https://github.com/jpillora/xdomain#download).
 
 ```yaml
 # app/config/config.yml
-assetic:
+framework:
     assets:
-        xdomain_js:
-            inputs:
-                - //cdn.rawgit.com/jpillora/xdomain/0.7.3/dist/xdomain.min.js
-
+        packages:
+            xdomain:
+                version: 0.7.3
+                version_format: %%2$s/dist/%%1$s
+                base_urls:
+                    - //cdn.rawgit.com/jpillora/xdomain
 ```

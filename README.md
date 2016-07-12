@@ -51,7 +51,7 @@ framework:
     assets:
         packages:
             xdomain:
-                version: 0.7.3
+                version: 0.7.5
                 version_format: %%2$s/dist/%%1$s
                 base_urls:
                     - //cdn.rawgit.com/jpillora/xdomain
